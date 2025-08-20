@@ -384,7 +384,6 @@ func (t *SubprocessCLITransport) Disconnect() error {
 	}
 
 	t.connected = false
-	close(t.doneChan)
 
 	return nil
 }
